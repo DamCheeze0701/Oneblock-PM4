@@ -90,7 +90,7 @@ class Oneblock extends PluginBase implements Listener {
   
   public function onCommand(CommandSender $player, Command $cmd, String $label, array $args): bool{
     switch($cmd->getName()){
-      case "oneblock":
+      case "is":
         if($player instanceof Player){
           $this->MenuForm($player);
         }else{
